@@ -1,3 +1,5 @@
+import utilStyles from '../../styles/utils.module.css'
+import styles from '../../styles/layout.module.css'
 
 export const metadata = {
   title: 'Next.js Blog: Typescript',
@@ -15,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <div className={styles.container}>
+        <main>{children}</main>
+        </div>
       </body>
     </html>
   )
